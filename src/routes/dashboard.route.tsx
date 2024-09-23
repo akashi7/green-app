@@ -7,7 +7,7 @@ import Sidebar from '../components/common/sidebar/sidebar'
 
 const Dashboard = () => {
   return (
-    <Layout className='h-[100vh] bg-white overflow-y-hidden'>
+    <Layout className='h-[100vh] bg-[#f1f3f2] overflow-y-hidden'>
       <div className='flex h-[100%]'>
         <Sidebar />
         <div className='flex-1 h-[100%] flex flex-col  mb-16 p-[10px]'>

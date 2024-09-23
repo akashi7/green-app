@@ -32,10 +32,15 @@
   border: none !important;
 }
 .custom-table-header .ant-table-thead > tr > th {
-  background-color: #d8dfda !important;
+  background-color: #f1f3f2 !important;
   color: #516155 !important;
   font-size: 14px !important;
   line-height: 21px !important;
+}
+
+.custom-table-header {
+  border: 0.1px solid rgb(209, 205, 205) !important ;
+  border-radius: 8px !important;
 }
 
 .scroll::-webkit-scrollbar {
