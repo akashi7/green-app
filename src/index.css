@@ -83,3 +83,10 @@
   color: #667369 !important;
   background-color: transparent !important;
 }
+
+.ant-steps-item-active .ant-steps-item-icon {
+  background-color: green !important;
+  border-color: green !important;
+  color: green;
+  content: none !important;
+}

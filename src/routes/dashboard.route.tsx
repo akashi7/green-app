@@ -4,6 +4,7 @@ import ClientList from '../components/clients/list'
 import ContentWrapper from '../components/common/contentwrapper/contentwrapper'
 import NavBar from '../components/common/header/header'
 import Sidebar from '../components/common/sidebar/sidebar'
+import OneClient from '../components/clients/oneClient'
 
 const Dashboard = () => {
   return (
@@ -15,6 +16,7 @@ const Dashboard = () => {
           <ContentWrapper>
             <Routes>
               <Route path='/' element={<ClientList />} />
+              <Route path='/client/:id' element={<OneClient />} />
             </Routes>
           </ContentWrapper>
         </div>

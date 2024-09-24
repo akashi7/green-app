@@ -1,6 +1,4 @@
-import dashboardIcon from '../../assets/icons/Dashboard.svg'
 import AddIcon from '../../assets/icons/add-circle.svg'
-import leftIcon from '../../assets/icons/arrow-right.svg'
 import FilterIcon from '../../assets/icons/document-filter.svg'
 import CustomButton from '../common/button/button'
 import CustomImage from '../common/image/customImage'
@@ -9,14 +7,7 @@ import ClientsTable from '../tables/clientTable'
 const ClientList = () => {
   return (
     <section>
-      <div className='flex flex-row items-center gap-2'>
-        <CustomImage src={dashboardIcon} />
-        <CustomImage src={leftIcon} />
-        <p className='text-[#9EA9A0] font-medium text-[14px] leading-[21px]'>
-          Clients
-        </p>
-      </div>
-      <section className='mt-10 flex justify-between items-center'>
+      <section className=' flex justify-between items-center'>
         <div>
           <p className='text-[#031107] text-[20px] font-semibold leading-[28px]'>
             Clients list

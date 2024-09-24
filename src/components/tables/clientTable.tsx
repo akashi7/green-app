@@ -6,6 +6,7 @@ import { clientsData } from '../../utils/data'
 import CustomButton from '../common/button/button'
 import CustomImage from '../common/image/customImage'
 import CustomPagination from '../common/pagination/customPagination'
+import { useNavigate } from 'react-router-dom'
 
 const { Column } = Table
 
@@ -37,10 +38,16 @@ const ClientsTable = (): ReactElement => {
     setCurrentPage(1) // Reset to first page when page size changes
   }
 
+  const navigate = useNavigate()
+
   const paginatedData = clientsData.slice(
     (currentPage - 1) * pageSize,
     currentPage * pageSize
   )
+
+  function navigation(id: number) {
+    navigate(`/client/${id}`)
+  }
 
   return (
     <div>
@@ -56,7 +63,12 @@ const ClientsTable = (): ReactElement => {
           title='Name'
           key='name'
           render={(record) => (
-            <span className='text-[#031107]'>{record?.name}</span>
+            <span
+              className='text-[#031107] cursor-pointer'
+              onClick={() => navigation(record.id)}
+            >
+              {record?.name}
+            </span>
           )}
         />
         <Column

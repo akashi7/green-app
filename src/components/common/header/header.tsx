@@ -6,7 +6,7 @@ import Menu from '../../../assets/icons/menu.svg'
 
 const NavBar = (): ReactElement => {
   return (
-    <nav className=' flex justify-between items-center p-[24px]  bg-white h-[80px] rounded-[16px]'>
+    <nav className=' flex justify-between items-center p-[24px]  bg-white h-[80px] rounded-[16px] mx-5 my-2'>
       <section className=' flex flex-row items-center gap-5'>
         <CustomImage src={Cover} />
         <div>

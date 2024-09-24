@@ -65,7 +65,7 @@ const Sidebar = (): ReactElement => {
           <SidebarItem
             icon={<CustomImage src={OverView} />}
             text='overview'
-            url='/ds/'
+            url='/'
           />
           <SidebarItem
             icon={<CustomImage src={User} />}
